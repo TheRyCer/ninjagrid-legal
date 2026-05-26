@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ninjagrid - RPD33 Studio</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #101411;
+      --panel: #19211d;
+      --text: #f5f1e8;
+      --muted: #b9c2b7;
+      --accent: #dfb650;
+      --line: rgba(255, 255, 255, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+    nav { margin-bottom: 28px; }
+    h1 { margin: 0 0 12px; font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1; }
+    h2 { margin-top: 36px; }
+    p { color: var(--muted); max-width: 760px; }
+    a { color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 28px 0; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+    .label { color: var(--muted); font-size: 0.9rem; margin-bottom: 4px; }
+    .value { font-weight: 700; }
+    ul { color: var(--muted); }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="./studio.html">RPD33 Studio</a></nav>
+
+    <header>
+      <h1>Ninjagrid</h1>
+      <p>A turn-based stealth puzzle game where every move matters. Infiltrate compact tactical boards, read enemy vision, use ninja tools, and reach the objective without being captured.</p>
+    </header>
+
+    <section class="meta" aria-label="Application details">
+      <div class="card">
+        <div class="label">Package name</div>
+        <div class="value">com.rpd33studio.ninjagrid</div>
+      </div>
+      <div class="card">
+        <div class="label">Platform</div>
+        <div class="value">Android / Google Play</div>
+      </div>
+      <div class="card">
+        <div class="label">Publisher</div>
+        <div class="value">RPD33 Studio</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publisher Links</h2>
+      <ul>
+        <li><a href="./index.html">Privacy Policy</a></li>
+        <li><a href="./app-ads.txt">app-ads.txt</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.rpd33studio.ninjagrid">Google Play listing</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Support</h2>
+      <p>For privacy or publishing questions, contact <a href="mailto:privacy@rpd33studio.com">privacy@rpd33studio.com</a>.</p>
+    </section>
+
+    <footer>
+      RPD33 Studio. Ninjagrid is published under package <code>com.rpd33studio.ninjagrid</code>.
+    </footer>
+  </main>
+</body>
+</html>
