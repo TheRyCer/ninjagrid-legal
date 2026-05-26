@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RPD33 Studio</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1412;
+      --panel: #18201d;
+      --text: #f3f1e8;
+      --muted: #b8c1b5;
+      --accent: #e1b84f;
+      --line: rgba(255, 255, 255, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+    header { padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+    h1 { margin: 0 0 12px; font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1; }
+    h2 { margin-top: 36px; }
+    p { color: var(--muted); max-width: 720px; }
+    a { color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+    .card h3 { margin: 0 0 8px; }
+    .card p { margin: 0 0 12px; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>RPD33 Studio</h1>
+      <p>Independent game studio focused on compact tactical games, clear rules, and tense decision-making.</p>
+    </header>
+
+    <section>
+      <h2>Games</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Ninjagrid</h3>
+          <p>A turn-based stealth puzzle game where every move matters.</p>
+          <a href="./ninjagrid.html">Application page</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publisher Resources</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Privacy Policy</h3>
+          <p>Privacy policy for Ninjagrid and related publishing information.</p>
+          <a href="./index.html">Open privacy policy</a>
+        </article>
+        <article class="card">
+          <h3>app-ads.txt</h3>
+          <p>Authorized digital sellers file for advertising verification.</p>
+          <a href="./app-ads.txt">Open app-ads.txt</a>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      RPD33 Studio. Contact: <a href="mailto:privacy@rpd33studio.com">privacy@rpd33studio.com</a>
+    </footer>
+  </main>
+</body>
+</html>
